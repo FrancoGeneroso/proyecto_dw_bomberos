@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400&family=Hind:wght@400;700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap');
+
+
+.logoCuartel{
+    width: 9%;    
+    }
+.colorNav{
+    color: white;
+}
+
+.tipografiaAnclas{
+    color: white !important;
+    font-family: 'Hind', sans-serif;;
+    font-size: 1.2rem;
+    font-weight: 400;
+   
+    
+    
+}
+
+.backNav{    
+    width: 100%;
+    
+}
+
+
+
+.tituloMain{
+    font-family: 'Hind', sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 200px;
+    
+    }
+
+.subtituloMain{
+    font-family: 'Hind', sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
+        
+    }
+
+.backgroundMain{
+    background-image:url(../assets/img/fondoBombero.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -10;
+    background-attachment: fixed;
+        
+    }    
+    
+.contenedorVideo {
+    width: 100%;
+    object-fit: cover;              
+    .videoBomberos{ 
+        width: 50%;
+        border-radius: 20px;
+        box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
+        } }
+
+.backgroundFooter{ 
+   
+    background-image: url(../assets/img/ola.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-color: rgb(105, 0, 0);
+    position: relative;
+    height: 20vh;
+    }
+
+
+.contenedorFooterLogo {
+    width: 10%;
+    margin-left:20%; 
+}
+
+.logoCuartelFooter{
+    width: 70px;
+    
+}
+
+.redes{
+    justify-content: space-evenly;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ 
+.footerLeftInfo {   
+        
+    color: rgb(250, 249, 249);
+    font-family: 'Biryani', sans-serif;  
+    font-style: normal;
+    font-weight: 200;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    width: 100%;
+    line-height: 5px;}
+
+.tamanioIcon{
+    width: 90px;
+}
+
+
+
+.backMain{
+    background-color: aqua;
+}
+
+.parrafo{
+    color: rgb(255, 255, 255);
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: justify;
+    
+}
+span{
+    color: rgb(233, 74, 0);
+    font-weight: 700;
+}
+
+.titulo{ 
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 120px;
+    font-size: 5rem;
+     
+ } 
+
+@media screen and (min-width: 576px) and (max-width:1200px) {
+    .cuartel img{ width: 700px;
+    justify-content: center;
+    align-items: center;
+margin-left: 90px}
+}
+
+
+    /*
+     .backMain{
+        background-color: aqua;
+    }
+    .backMain2{
+        background-color: rgb(9, 16, 116);
+    }
+    .backMain3{
+        background-color: rgb(208, 255, 0);
+    }
+    
+    
+    .contenedorVideo {
+        width: 400px;
+        object-fit: cover;    
+        justify-content: center;
+        padding-bottom: 120px;
+            .videoBomberos{ 
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                border-radius: 20px;
+                box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
+                -moz-box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);  
+                      
+            }
+        }
+        
+
+/*
+
+
+    .backMain2{
+        background-color: rgb(212, 209, 1);
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+HEADER CON NAV
+
+.header{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 12%;
+    position: fixed;
+    opacity: 100%;
+    z-index: 10;
+}
+
+.contenedorLogo{
+    width: 60%;
+    
+}
+
+
+
+}
+.nav{
+    width: 40%;
+    display: flex;
+    align-items: center;  
+    justify-content: end;  
+    padding-right: 20px;   
+
+    }
+
+    
+.listaItems{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.anclasNav{
+    text-decoration: none;
+    color: white;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+TITULOS DE TODOS LOS HTML
+.titulo{ 
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 120px;
+    font-size: 5rem;
+     
+ } 
+        
+
+
+INDEX
+
+.tituloMain{
+    font-family: 'Hind', sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 200px;
+    
+    }
+
+
+.subtituloMain{
+    font-family: 'Hind', sans-serif;
+    font-size: 4rem;
+    color: white;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.separacionTitulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+       
+   
+}
+
+.contenedorVideo {
+    display: flex;
+    object-fit: cover;    
+    justify-content: center;
+    padding-bottom: 120px;
+        .videoBomberos{ 
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            border-radius: 20px;
+            box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
+            -webkit-box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
+            -moz-box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);  
+                  
+        }
+    }
+  
+
+
+NOSOTROS
+
+.contenedorParrafos{
+    display: flex;
+    width: 100%;
+}
+
+.cuartel{
+    width: 60%;
+}
+
+.parrafo{
+    color: rgb(255, 255, 255);
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: justify;
+    
+}
+
+.parrafosNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    
+}
+
+span{
+    color: rgb(233, 74, 0);
+    font-weight: 700;
+}
+
+FONDO MAIN
+
+.backgroundMain{
+    background-image:url(../assets/img/fondoBombero.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -10;
+    background-attachment: fixed;
+    
+}
+
+
+FOOTER
+
+.backgroundFooter{ 
+    display: flex;
+    background-image: url(../assets/img/ola.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(105, 0, 0);
+    position: relative;
+    }
+
+.contenedorlogoCuartelFooter{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    width: 30%;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+
+ .logoCuartelFooter{
+    height: 70px;
+}
+
+
+.footerInfo { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: rgb(250, 249, 249);
+    font-family: 'Biryani', sans-serif;  
+    font-style: normal;
+    font-weight: 200;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    width: 30%;
+    line-height: 30px;
+    
+}   
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+
+.tamanioIcon{
+    height: 60px;
+}
+
+
+GALERIA
+
+.contenedorFotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    gap: 10px;
+    padding-bottom: 40px;
+    
+    
+}
+
+.fotos{
+    height: 400px ;
+    width: 400px;
+    object-fit: cover;
+    border: 1px solid white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos img{
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+
+
+
+FORMULARIO - UNITE
+.contenedorTextoUnite{
+    padding-bottom: 40px;
+}
+.textoUnite{
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+        .h4{
+            padding-bottom: 60px;
+        }
+    
+
+}
+
+
+.contenedorForm{
+    display: flex;
+    justify-content: center;
+}
+  
+.formularioCompleto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 30px;
+    
+}
+
+.input{
+    font-family: 'Hind', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    width: 400px;
+    border-radius: 5px;
+    
+
+}
+
+.textarea{
+    padding-bottom: 50px;
+    width: 600px;
+}
+
+.resetSend{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    gap: 20px;
+    
+    .limpiar{
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: rgb(211, 0, 0);
+    color: white;
+    border-radius: 10px ;
+    padding: 20px;
+    text-transform: uppercase;
+     
+}
+    
+}
+.enviar{
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: rgb(3, 204, 20);
+    color: white;
+    border-radius: 10px ;
+    padding: 20px;
+    text-transform: uppercase;
+}
+.divMaps{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;    
+    padding-top: 50px;
+}
+
+.maps{
+    height: 20vh;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    
+}
+
+
+
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+    
+}
+
+.botones{
+    height: 400px;
+    width: 400px;
+    border-radius: 40px;
+}
+.colaboraMain{
+    height: 100vh;
+}
+
+.botonMp{
+    padding-top: 200px;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-image: url(../assets/img/mercadopago.png);
+
+}
+
+.botonCafecito{
+    padding-top: 200px;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-image: url(../assets/img/cafecito.png);
+}
+
+.colabora{
+    padding-top: 30px;
+}
+MEDIAS QUERIES*/
+
