@@ -156,13 +156,117 @@ span{
     font-family: 'Hind', sans-serif;
     font-weight: 700;
     color: white;
-    padding-top: 120px;
+    padding-top: 40px;
     font-size: 5rem;
      
  } 
 
+ .contenedorTextoUnite{
+    padding-bottom: 40px;
+}
+.textoUnite{
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+        .h4{
+            padding-bottom: 60px;
+        }    
 
+}
 
+  
+.formularioCompleto{
+    
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 0px;
+    margin: 0;
+    
+}
+
+.input{
+    font-family: 'Hind', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    width: 400px;
+    border-radius: 5px;
+    
+
+}
+
+.textarea{
+    padding-bottom: 50px;
+    width: 600px;
+    resize: none;
+}
+
+.resetSend{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    gap: 20px;
+    
+     
+}
+
+.limpiar{
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: rgb(211, 0, 0);
+    color: white;
+    border-radius: 10px ;
+    padding: 20px;
+    text-transform: uppercase;
+
+    
+}
+.enviar{
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: rgb(3, 204, 20);
+    color: white;
+    border-radius: 10px ;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+    
+}
+
+.botones{
+    height: 400px;
+    width: 400px;
+    border-radius: 40px;
+}
+
+.divMaps{
+    
+    
+    padding-bottom: 40px;    
+    padding-top: 50px;
+}
+
+.maps{
+    height: 20vh;
+    width: 50%;
+    border-radius: 10px;
+    
+    
+    
+}
 @media screen and (max-width: 884px){
 
 /*HEADER RESPONSIVE*/
@@ -278,6 +382,42 @@ padding-bottom: 10px;
     align-items: center;
 
 }
+
+/*UNITE RESPONSIVE*/
+
+.textarea{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.input{
+    width: 300px;
+    
+}
+
+.nombreYApellido{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mailyTelefono{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formularioCompleto{
+    background-color: transparent;
+}
+
+.maps{
+    width: 70%
+}
+
+
 }
 
 

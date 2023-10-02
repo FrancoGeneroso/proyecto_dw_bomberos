@@ -42,42 +42,51 @@
 
         </header>
 
-        <main class="backgroundMain formulario">
+        <main class="backgroundMain formulario  conteiner-fluid ">
+
+            <div>
             <h2 class="titulo">UNITE</h2>
-            <div class="contenedorTextoUnite">
+            <div class="contenedorTextoUnite w-100">
                 <h3 class="textoUnite h3">¿Querés ser Bombero Voluntario?</h3>
                 <h4 class="textoUnite h4">Convertite en parte de nuestra familia</h4>
             </div>
 
-            <form class="contenedorForm" action="404.html" method="post" target="_blank">
+            <form class="contenedorForm row w-100" action="404.html" method="post" target="_blank">
 
                 
 
-                <section class="formularioCompleto">
-                    <div class="nombreYApellido">
+                <section class="formularioCompleto col-md-12 justify-content-center d-flex ">
+
+                    <div class="nombreYApellido  justify-content-center align-items-center">
                         <input class="input nombre"  type="text" name= nombre id="nombre" placeholder="Nombre" required > 
                         <input class="input apellido"  type="text" name="apellido" id="apellido" placeholder="Apellido" required >
                     </div>    
                     <br>    
-                    <div class="mailyTelefono">                        
+                    <div class="mailyTelefono ">                        
                         <input class="input mail"  type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required >
                         <input class="input telefono"  type="tel" name="telefono" id="telefono" placeholder="11 3599 3340" required >
                     </div>
                     <br>
-                    <div class="textarea">
+                    <div class="textarea ">
                         <textarea class="input textarea"  name="comentario" id="comentario" cols="40" rows="5" placeholder="¿Porqué quieres unirte?"></textarea>
                     </div>
-                    <div class="resetSend">
+                    <div class="resetSend ">
                         <input class="input limpiar"  type="reset" name="limpiar" id="limpiar" placeholder="Limpiar" value="Limpiar">
                         <input class="input enviar"  type="submit" name="enviar" id="enviar" placeholder="Enviar" value="Enviar">
                     </div>
+                    
                 </section>
+                         
             
 
             ></form>
-                <div class="divMaps">
-                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13104.756381091329!2d-58.280284!3d-34.8011842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32958a03ea609%3A0xdee2cf4507fc14e2!2sBomberos%20Voluntarios%20de%20Florencio%20Varela!5e0!3m2!1ses-419!2sar!4v1693615724660!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="__blank" ></iframe>
+
+            <section class="row  justify-content-center d-flex w-100">
+                <div class="divMaps col-md-12  d-flex justify-content-center">
+                    <iframe class="maps d-flex justify-content-center align-items-center" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13104.756381091329!2d-58.280284!3d-34.8011842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32958a03ea609%3A0xdee2cf4507fc14e2!2sBomberos%20Voluntarios%20de%20Florencio%20Varela!5e0!3m2!1ses-419!2sar!4v1693615724660!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="__blank" ></iframe>
                 </div>
+            </section>
+                
         </main>    
 
         <footer class="container-fluid backgroundFooter ">
