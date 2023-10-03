@@ -462,7 +462,10 @@ padding-bottom: 10px;
 .maps{
     width: 70%
 }
-
+.divMaps{
+    margin: 0;
+    margin-left: 10px;
+}
 
 /*GALERIA RESPONSIVE*/
 
