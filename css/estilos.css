@@ -296,6 +296,9 @@ span{
     background-image: url(../assets/img/cafecito.png);
 }
 
+
+/*MEDIA QUERYS*/
+
 @media screen and (max-width: 884px){
 
 /*HEADER RESPONSIVE*/
