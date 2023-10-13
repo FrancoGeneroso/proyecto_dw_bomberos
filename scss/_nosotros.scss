@@ -12,7 +12,7 @@
     margin: 0;
     .parrafo{
         color: rgb(255, 255, 255);
-        font-family: 'Prompt', sans-serif;
+        font-family: $fuente-tercera;
         font-size: 1.1rem;
         font-weight: 400;
         padding-left: 0px;
@@ -22,7 +22,7 @@
         text-align: justify;
         margin: 0;
         span{
-            color: rgb(233, 74, 0);
+            color: map-get($mapa-colores, color-naranjaClaro );
             font-weight: 700;
         }
     }

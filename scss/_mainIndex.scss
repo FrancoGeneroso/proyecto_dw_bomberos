@@ -9,7 +9,7 @@
         font-family: $fuente-principal;
         font-size: 7rem;
         font-weight: 700;
-        color: white;
+        color:map-get($mapa-colores, color-white);
         margin-bottom: 10px;
         text-align: center;
         padding-top: 200px;
@@ -19,7 +19,7 @@
     .subtituloMain{
         font-family: $fuente-principal;
         font-size: 4rem;
-        color: white;
+        color: map-get($mapa-colores, color-white);
         margin-top: 10px;
         font-weight: 700;
         text-align: center;
@@ -41,7 +41,7 @@
 
 
 @media screen and (min-width: 250px) and (max-width: 884px){
-    
+
     /*RESPONSIVE INDEX*/
 
     

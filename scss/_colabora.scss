@@ -29,15 +29,18 @@
     .botonMp{
         background-image: url(../assets/img/mercadopago.png);
     }
+    
+}
+
+.cafecito{
+    padding-bottom: 50px;
+    .botonCafecito{
+        background-image: url(../assets/img/cafecito.png);
+        
+    }
 }
 
 
-
-
-
-.botonCafecito{
-    background-image: url(../assets/img/cafecito.png);
-}
 
 
 /*responsive*/
@@ -45,23 +48,24 @@
 
 /*COLABORA RESPONSIVE*/
 
-.DosBotones{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.anclaBotonMp{
-    padding: 0;
-    padding-bottom: 20px
-}
+
 
 .botonCafecito{
     padding-bottom: 50px;
 }
 .backgroundMain{
     margin: 0;
-}
-.botonUno{
-    padding-right: 0;
+    .DosBotones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .botonUno{
+        padding-right: 0;
+        .anclaBotonMp{
+            padding: 0;
+            padding-bottom: 20px
+        }
+    }
 }

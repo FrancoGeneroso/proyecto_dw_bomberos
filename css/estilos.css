@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400&family=Hind:wght@400;700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap");
+/* TITULOS DE TODOS LOS HTML*/
+.titulo {
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  font-weight: 700;
+  color: white;
+  padding-top: 120px;
+  font-size: 5rem;
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  .titulo {
+    font-size: 2rem;
+  }
+}
 /*NAV*/
 .posicionHeader {
   position: fixed;
@@ -114,76 +130,6 @@
     width: 70%;
   }
 }
-/*FOOTER*/
-.backgroundFooter {
-  background-image: url(../assets/img/ola.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-color: rgb(105, 0, 0);
-  position: relative;
-  height: 20vh;
-}
-.backgroundFooter .footerLeftInfo {
-  color: rgb(250, 249, 249);
-  font-family: "Biryani", sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  padding-left: 10px;
-  padding-bottom: 5px;
-  padding-top: 10px;
-  width: 100%;
-  line-height: 5px;
-}
-.backgroundFooter .redes {
-  justify-content: space-evenly;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.backgroundFooter .redes .tamanioIcon {
-  width: 90px;
-}
-.backgroundFooter .contenedorFooterLogo {
-  width: 10%;
-  margin-left: 20%;
-}
-.backgroundFooter .contenedorFooterLogo .logoCuartelFooter {
-  width: 70px;
-}
-
-@media screen and (min-width: 250px) and (max-width: 884px) {
-  /*FOOTER RESPOMSIVE*/
-  .backgroundFooter {
-    height: 50vh;
-  }
-  .backgroundFooter .footerLeftInfo {
-    justify-content: center;
-    line-height: 20px;
-  }
-  .backgroundFooter .redes {
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-  }
-  .backgroundFooter .redes .tamanioIcon {
-    width: 55px;
-  }
-  .backgroundFooter .contenedorFooterLogo {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    margin-left: 0;
-    width: 100%;
-  }
-  .backgroundFooter .contenedorFooterLogo .logoCuartelFooter {
-    width: 50px;
-    align-items: center;
-  }
-}
 /*NOSOTROS*/
 .contenedorMain {
   margin: 0;
@@ -246,22 +192,65 @@
     margin: 0;
   }
 }
-/* TITULOS DE TODOS LOS HTML*/
-.titulo {
+/*COLABORA*/
+.contenedorTextoUnite {
+  padding-bottom: 40px;
+}
+.contenedorTextoUnite .textoUnite {
   text-align: center;
   font-family: "Hind", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 1.3rem;
   color: white;
-  padding-top: 120px;
-  font-size: 5rem;
+}
+.contenedorTextoUnite .textoUnite .h4 {
+  padding-bottom: 60px;
 }
 
-/*RESPONSIVE*/
-@media screen and (min-width: 250px) and (max-width: 884px) {
-  .titulo {
-    font-size: 2rem;
-  }
+.botones {
+  height: 400px;
+  width: 400px;
+  border-radius: 40px;
 }
+
+.anclaBotonMp {
+  padding-right: 80px;
+  padding-bottom: 50px;
+}
+.anclaBotonMp .botonMp {
+  background-image: url(../assets/img/mercadopago.png);
+}
+
+.cafecito {
+  padding-bottom: 50px;
+}
+.cafecito .botonCafecito {
+  background-image: url(../assets/img/cafecito.png);
+}
+
+/*responsive*/
+/*COLABORA RESPONSIVE*/
+.botonCafecito {
+  padding-bottom: 50px;
+}
+
+.backgroundMain {
+  margin: 0;
+}
+.backgroundMain .DosBotones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.backgroundMain .botonUno {
+  padding-right: 0;
+}
+.backgroundMain .botonUno .anclaBotonMp {
+  padding: 0;
+  padding-bottom: 20px;
+}
+
 .contenedorForm {
   margin: 0;
 }
@@ -275,16 +264,14 @@
   border-radius: 0px;
   margin: 0;
 }
-
-.input {
+.formularioCompleto .input {
   font-family: "Hind", sans-serif;
   font-weight: lighter;
   font-size: 1.2rem;
   width: 400px;
   border-radius: 5px;
 }
-
-.textarea {
+.formularioCompleto .textarea {
   padding-bottom: 50px;
   width: 600px;
   resize: none;
@@ -296,46 +283,68 @@
   align-items: center;
   gap: 20px;
 }
-
-.limpiar {
+.resetSend .limpiar {
   font-family: "Hind", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
-  background-color: rgb(211, 0, 0);
+  background-color: #d30000;
+  color: white;
   border-radius: 10px;
   padding: 20px;
   text-transform: uppercase;
 }
-
-.enviar {
+.resetSend .enviar {
   font-family: "Hind", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
   background-color: rgb(3, 204, 20);
+  color: white;
   border-radius: 10px;
   padding: 20px;
   text-transform: uppercase;
-}
-
-.contenedorBoton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-  gap: 10px;
 }
 
 .divMaps {
   padding-bottom: 40px;
   padding-top: 50px;
 }
-
-.maps {
+.divMaps .maps {
   height: 20vh;
   width: 50%;
   border-radius: 10px;
 }
 
+/*UNITE FORMULARIO RESPONSIVE*/
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  .formularioCompleto {
+    background-color: transparent;
+  }
+  .formularioCompleto .nombreYApellido {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .formularioCompleto .mailyTelefono {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .formularioCompleto .textarea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .formularioCompleto .input {
+    width: 300px;
+  }
+  .divMaps {
+    margin: 0;
+    margin-left: 10px;
+  }
+  .divMaps .maps {
+    width: 70%;
+  }
+}
 /*GALERIA*/
 .tamanioCarrusel {
   width: 60%;
@@ -343,41 +352,81 @@
   margin: 0 auto;
 }
 
-/*MEDIA QUERYS*/
 @media screen and (min-width: 250px) and (max-width: 884px) {
-  /*UNITE FORMULARIO RESPONSIVE*/
-  .textarea {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .input {
-    width: 300px;
-  }
-  .nombreYApellido {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .mailyTelefono {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .formularioCompleto {
-    background-color: transparent;
-  }
-  .maps {
-    width: 70%;
-  }
-  .divMaps {
-    margin: 0;
-    margin-left: 10px;
-  }
   /*GALERIA RESPONSIVE*/
   .tamanioCarrusel {
     width: 100%;
     padding-top: 30px;
+  }
+}
+/*FOOTER*/
+.backgroundFooter {
+  background-image: url(../assets/img/ola.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-color: rgb(105, 0, 0);
+  position: relative;
+  height: 20vh;
+}
+.backgroundFooter .footerLeftInfo {
+  color: white;
+  font-family: "Biryani", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  width: 100%;
+  line-height: 5px;
+}
+.backgroundFooter .redes {
+  justify-content: space-evenly;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.backgroundFooter .redes .tamanioIcon {
+  width: 90px;
+}
+.backgroundFooter .contenedorFooterLogo {
+  width: 10%;
+  margin-left: 20%;
+}
+.backgroundFooter .contenedorFooterLogo .logoCuartelFooter {
+  width: 70px;
+}
+
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  /*FOOTER RESPOMSIVE*/
+  .backgroundFooter {
+    height: 50vh;
+  }
+  .backgroundFooter .footerLeftInfo {
+    justify-content: center;
+    line-height: 20px;
+  }
+  .backgroundFooter .redes {
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+  .backgroundFooter .redes .tamanioIcon {
+    width: 55px;
+  }
+  .backgroundFooter .contenedorFooterLogo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .backgroundFooter .contenedorFooterLogo .logoCuartelFooter {
+    width: 50px;
+    align-items: center;
   }
 }
 

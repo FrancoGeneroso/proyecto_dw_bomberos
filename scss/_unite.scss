@@ -1,0 +1,128 @@
+.contenedorForm{
+    margin: 0;
+}
+
+  
+.formularioCompleto{
+    
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+    background-color: map-get($mapa-colores, color-black );
+    border-radius: 0px;
+    margin: 0;
+    .input{
+        font-family: $fuente-principal;
+        font-weight: lighter;
+        font-size: 1.2rem;
+        width: 400px;
+        border-radius: 5px;
+        
+    
+    }
+    .textarea{
+        padding-bottom: 50px;
+        width: 600px;
+        resize: none;
+    }
+}
+
+
+
+.resetSend{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    gap: 20px;
+    .limpiar{
+        font-family: $fuente-principal;
+        font-weight: bold;
+        font-size: 1.3rem;
+        background-color: map-get($mapa-colores, color-red);
+        color: map-get($mapa-colores, color-white );
+        border-radius: 10px ;
+        padding: 20px;
+        text-transform: uppercase;
+    
+        
+    }
+    .enviar{
+        font-family: $fuente-principal;
+        font-weight: bold;
+        font-size: 1.3rem;
+        background-color: map-get($mapa-colores, color-green );
+        color:map-get($mapa-colores, color-white);
+        border-radius: 10px ;
+        padding: 20px;
+        text-transform: uppercase;
+    }
+     
+}
+
+
+
+.divMaps{    
+    
+    padding-bottom: 40px;    
+    padding-top: 50px;
+    .maps{
+        height: 20vh;
+        width: 50%;
+        border-radius: 10px;
+        
+    }
+}
+
+
+/*UNITE FORMULARIO RESPONSIVE*/
+
+
+@media screen and (min-width: 250px) and (max-width: 884px){
+
+
+
+
+
+.formularioCompleto{
+    background-color: transparent;
+    .nombreYApellido{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .mailyTelefono{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .textarea{ 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .input{
+        width: 300px;
+        
+    }
+    
+}
+
+
+.divMaps{
+    margin: 0;
+    margin-left: 10px;
+    .maps{
+        width: 70%
+    }
+}
+
+
+
+}
+
+
+
+

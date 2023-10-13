@@ -8,13 +8,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    background-color: rgb(105, 0, 0);
+    background-color:map-get($mapa-colores, color-bordo );
     position: relative;
     height: 20vh;
     .footerLeftInfo {   
         
-        color: rgb(250, 249, 249);
-        font-family: 'Biryani', sans-serif;  
+        color: map-get($mapa-colores, color-white);
+        font-family: $fuente-segunda;  
         font-style: normal;
         font-weight: 200;
         padding-left: 10px;
