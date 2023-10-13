@@ -1,0 +1,7 @@
+@mixin contenedorFlexible($evenly, $left, $right, $top){
+    display: flex;
+    justify-content: $evenly;
+    padding-left: $left;
+    padding-right: $right;
+    padding-top: $top;
+}

@@ -48,14 +48,9 @@
         
     }
     .enviar{
-        font-family: $fuente-principal;
-        font-weight: bold;
-        font-size: 1.3rem;
+        @extend .limpiar;
         background-color: map-get($mapa-colores, color-green );
-        color:map-get($mapa-colores, color-white);
-        border-radius: 10px ;
-        padding: 20px;
-        text-transform: uppercase;
+        
     }
      
 }

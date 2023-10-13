@@ -22,7 +22,11 @@
             font-weight: 400;
             &:hover{
                 color: orange!important;
-            }    
+            } 
+            &:active{
+                color: white !important;
+                text-shadow: 0px 0px 19px rgba(255,169,48,0.98);;
+            }   
             
         }
         .inicio { color: orange !important; }

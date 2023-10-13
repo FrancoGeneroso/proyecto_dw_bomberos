@@ -11,7 +11,7 @@
 .parrafosNosotros{
     margin: 0;
     .parrafo{
-        color: rgb(255, 255, 255);
+        color: map-get($mapa-colores, color-white );
         font-family: $fuente-tercera;
         font-size: 1.1rem;
         font-weight: 400;

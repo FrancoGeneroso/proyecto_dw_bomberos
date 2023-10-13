@@ -17,12 +17,12 @@
         }
     
     .subtituloMain{
-        font-family: $fuente-principal;
+        @extend .tituloMain;
         font-size: 4rem;
         color: map-get($mapa-colores, color-white);
-        margin-top: 10px;
-        font-weight: 700;
+        margin-top: 10px;        
         text-align: center;
+        padding-top: 20px;
             
         }
         
@@ -53,6 +53,7 @@
      }
     
      .subtituloMain{ font-size: 1rem;
+        padding-top: 20px;
     }
 }
 .posicionHeader{position: relative;}

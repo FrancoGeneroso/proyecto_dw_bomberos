@@ -37,6 +37,10 @@
 .backNav .listaItems .tipografiaAnclas:hover {
   color: orange !important;
 }
+.backNav .listaItems .tipografiaAnclas:active {
+  color: white !important;
+  text-shadow: 0px 0px 19px rgba(255, 169, 48, 0.98);
+}
 .backNav .listaItems .inicio {
   color: orange !important;
 }
@@ -83,7 +87,7 @@
   z-index: -10;
   background-attachment: fixed;
 }
-.backgroundMain .tituloMain {
+.backgroundMain .tituloMain, .backgroundMain .subtituloMain {
   font-family: "Hind", sans-serif;
   font-size: 7rem;
   font-weight: 700;
@@ -93,12 +97,11 @@
   padding-top: 200px;
 }
 .backgroundMain .subtituloMain {
-  font-family: "Hind", sans-serif;
   font-size: 4rem;
   color: white;
   margin-top: 10px;
-  font-weight: 700;
   text-align: center;
+  padding-top: 20px;
 }
 
 .contenedorVideo {
@@ -115,12 +118,13 @@
 
 @media screen and (min-width: 250px) and (max-width: 884px) {
   /*RESPONSIVE INDEX*/
-  .backgroundMain .tituloMain {
+  .backgroundMain .tituloMain, .backgroundMain .subtituloMain {
     font-size: 2.5rem;
     padding-top: 80px;
   }
   .backgroundMain .subtituloMain {
     font-size: 1rem;
+    padding-top: 20px;
   }
   .posicionHeader {
     position: relative;
@@ -143,7 +147,7 @@
   margin: 0;
 }
 .contenedorParrafo .parrafosNosotros .parrafo {
-  color: rgb(255, 255, 255);
+  color: white;
   font-family: "Prompt", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -228,29 +232,40 @@
   background-image: url(../assets/img/cafecito.png);
 }
 
-/*responsive*/
-/*COLABORA RESPONSIVE*/
-.botonCafecito {
-  padding-bottom: 50px;
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  /*COLABORA RESPONSIVE*/
+  .botones {
+    height: 200px;
+    width: 200px;
+  }
+  .botonCafecito {
+    padding-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .backgroundMain {
+    margin: 0;
+  }
+  .backgroundMain .DosBotones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .backgroundMain .botonUno {
+    padding-right: 0;
+  }
+  .backgroundMain .botonUno .anclaBotonMp {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .backgroundMain .botonUno .anclaBotonMp .botonMp {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-
-.backgroundMain {
-  margin: 0;
-}
-.backgroundMain .DosBotones {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.backgroundMain .botonUno {
-  padding-right: 0;
-}
-.backgroundMain .botonUno .anclaBotonMp {
-  padding: 0;
-  padding-bottom: 20px;
-}
-
 .contenedorForm {
   margin: 0;
 }
@@ -283,7 +298,7 @@
   align-items: center;
   gap: 20px;
 }
-.resetSend .limpiar {
+.resetSend .limpiar, .resetSend .enviar {
   font-family: "Hind", sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
@@ -294,14 +309,7 @@
   text-transform: uppercase;
 }
 .resetSend .enviar {
-  font-family: "Hind", sans-serif;
-  font-weight: bold;
-  font-size: 1.3rem;
   background-color: rgb(3, 204, 20);
-  color: white;
-  border-radius: 10px;
-  padding: 20px;
-  text-transform: uppercase;
 }
 
 .divMaps {
@@ -382,9 +390,11 @@
   line-height: 5px;
 }
 .backgroundFooter .redes {
+  display: flex;
   justify-content: space-evenly;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 0;
 }
 .backgroundFooter .redes .tamanioIcon {
   width: 90px;
@@ -407,6 +417,7 @@
     line-height: 20px;
   }
   .backgroundFooter .redes {
+    display: flex;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;

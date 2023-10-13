@@ -23,9 +23,7 @@
         width: 100%;
         line-height: 5px;}
     .redes{
-        justify-content: space-evenly;
-        padding-left: 50px;
-        padding-right: 50px;
+        @include contenedorFlexible( space-evenly , 50px, 50px, 0);
         .tamanioIcon{
             width: 90px;
         }
@@ -54,10 +52,7 @@
         line-height: 20px;
     }
     .redes{
-        justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 20px;
+        @include contenedorFlexible(space-between, 30px, 30px, 20px);
         .tamanioIcon{
             width: 55px;
             

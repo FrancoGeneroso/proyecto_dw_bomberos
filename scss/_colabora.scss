@@ -28,6 +28,7 @@
     padding-bottom: 50px;
     .botonMp{
         background-image: url(../assets/img/mercadopago.png);
+        
     }
     
 }
@@ -37,21 +38,28 @@
     .botonCafecito{
         background-image: url(../assets/img/cafecito.png);
         
+        
     }
 }
 
 
 
 
-/*responsive*/
+@media screen and (min-width: 250px) and (max-width: 884px){
 
 
 /*COLABORA RESPONSIVE*/
 
 
-
+.botones{
+    height: 200px;
+    width: 200px;
+}
 .botonCafecito{
     padding-bottom: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .backgroundMain{
     margin: 0;
@@ -65,7 +73,13 @@
         padding-right: 0;
         .anclaBotonMp{
             padding: 0;
-            padding-bottom: 20px
+            padding-bottom: 20px;
+            .botonMp{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
         }
     }
+}
 }
