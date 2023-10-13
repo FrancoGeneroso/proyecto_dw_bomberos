@@ -21,29 +21,44 @@
 .backNav .listaItems .tipografiaAnclas:hover {
   color: orange !important;
 }
+.backNav .listaItems .inicio {
+  color: orange !important;
+}
+.backNav .listaItems .nosotros {
+  color: orange !important;
+}
+.backNav .listaItems .unite {
+  color: orange !important;
+}
+.backNav .listaItems .galeria {
+  color: orange !important;
+}
+.backNav .listaItems .colabora {
+  color: orange !important;
+}
 
-/*INDEX + BACKGROUND*/
-/*
-.tituloMain{
-    font-family: 'Hind', sans-serif;
-    font-size: 7rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 10px;
-    text-align: center;
-    padding-top: 200px;
-
-    }
-
-.subtituloMain{
-    font-family: 'Hind', sans-serif;
-    font-size: 4rem;
-    color: white;
-    margin-top: 10px;
-    font-weight: 700;
-    text-align: center;
-
-    }*/
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  /**HEADER RESPONSIVE*/
+  .contenedorNav {
+    width: 100%;
+    display: inline-block;
+  }
+  .navbar-brand {
+    margin: 0;
+  }
+  .contenedorLogo {
+    margin-left: 10px;
+  }
+  .logoCuartel {
+    width: 40px;
+  }
+  .contenedorListaItems {
+    padding-top: 20px;
+  }
+  .tipografiaAnclas {
+    text-align: right;
+  }
+}
 .backgroundMain {
   background-image: url(../assets/img/fondoBombero.jpg);
   background-size: cover;
@@ -82,6 +97,23 @@
   -moz-box-shadow: -1px 2px 30px 11px rgba(0, 0, 0, 0.75);
 }
 
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  /*RESPONSIVE INDEX*/
+  .backgroundMain .tituloMain {
+    font-size: 2.5rem;
+    padding-top: 80px;
+  }
+  .backgroundMain .subtituloMain {
+    font-size: 1rem;
+  }
+  .posicionHeader {
+    position: relative;
+  }
+  .contenedorVideo .videoBomberos {
+    margin-bottom: 50px;
+    width: 70%;
+  }
+}
 /*FOOTER*/
 .backgroundFooter {
   background-image: url(../assets/img/ola.png);
@@ -93,23 +125,7 @@
   position: relative;
   height: 20vh;
 }
-
-.contenedorFooterLogo {
-  width: 10%;
-  margin-left: 20%;
-}
-
-.logoCuartelFooter {
-  width: 70px;
-}
-
-.redes {
-  justify-content: space-evenly;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.footerLeftInfo {
+.backgroundFooter .footerLeftInfo {
   color: rgb(250, 249, 249);
   font-family: "Biryani", sans-serif;
   font-style: normal;
@@ -120,26 +136,67 @@
   width: 100%;
   line-height: 5px;
 }
-
-.tamanioIcon {
+.backgroundFooter .redes {
+  justify-content: space-evenly;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.backgroundFooter .redes .tamanioIcon {
   width: 90px;
 }
+.backgroundFooter .contenedorFooterLogo {
+  width: 10%;
+  margin-left: 20%;
+}
+.backgroundFooter .contenedorFooterLogo .logoCuartelFooter {
+  width: 70px;
+}
 
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  /*FOOTER RESPOMSIVE*/
+  .backgroundFooter {
+    height: 50vh;
+  }
+  .backgroundFooter .footerLeftInfo {
+    justify-content: center;
+    line-height: 20px;
+  }
+  .backgroundFooter .redes {
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
+  .backgroundFooter .redes .tamanioIcon {
+    width: 55px;
+  }
+  .backgroundFooter .contenedorFooterLogo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .backgroundFooter .contenedorFooterLogo .logoCuartelFooter {
+    width: 50px;
+    align-items: center;
+  }
+}
 /*NOSOTROS*/
 .contenedorMain {
   margin: 0;
 }
 
-.cuartel {
+.contenedorParrafo .cuartel {
   padding-bottom: 50px;
   padding-left: 50px;
 }
-
-.parrafosNosotros {
+.contenedorParrafo .parrafosNosotros {
   margin: 0;
 }
-
-.parrafo {
+.contenedorParrafo .parrafosNosotros .parrafo {
   color: rgb(255, 255, 255);
   font-family: "Prompt", sans-serif;
   font-size: 1.1rem;
@@ -151,12 +208,44 @@
   text-align: justify;
   margin: 0;
 }
-
-span {
+.contenedorParrafo .parrafosNosotros .parrafo span {
   color: rgb(233, 74, 0);
   font-weight: 700;
 }
 
+/*NOSOTROS RESPONSIVE*/
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  .contenedorParrafo {
+    padding: 0;
+  }
+  .contenedorParrafo .cuartel {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+  .contenedorParrafo .cuartel img {
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin: 0;
+  }
+  .contenedorParrafo .parrafosNosotros {
+    padding-left: 20px;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contenedorParrafo .parrafosNosotros .parrafo {
+    padding-right: 0;
+    margin: 0;
+  }
+}
 /* TITULOS DE TODOS LOS HTML*/
 .titulo {
   text-align: center;
@@ -167,19 +256,14 @@ span {
   font-size: 5rem;
 }
 
-.contenedorTextoUnite {
-  padding-bottom: 40px;
+/*RESPONSIVE*/
+@media screen and (min-width: 250px) and (max-width: 884px) {
+  .titulo {
+    font-size: 2rem;
+  }
 }
-
-.textoUnite {
-  text-align: center;
-  font-family: "Hind", sans-serif;
-  font-weight: bold;
-  font-size: 1.3rem;
-  color: white;
-}
-.textoUnite .h4 {
-  padding-bottom: 60px;
+.contenedorForm {
+  margin: 0;
 }
 
 .formularioCompleto {
@@ -218,7 +302,6 @@ span {
   font-weight: bold;
   font-size: 1.3rem;
   background-color: rgb(211, 0, 0);
-  color: white;
   border-radius: 10px;
   padding: 20px;
   text-transform: uppercase;
@@ -229,7 +312,6 @@ span {
   font-weight: bold;
   font-size: 1.3rem;
   background-color: rgb(3, 204, 20);
-  color: white;
   border-radius: 10px;
   padding: 20px;
   text-transform: uppercase;
@@ -261,142 +343,8 @@ span {
   margin: 0 auto;
 }
 
-/*COLABORA*/
-.botones {
-  height: 400px;
-  width: 400px;
-  border-radius: 40px;
-}
-
-.anclaBotonMp {
-  padding-right: 80px;
-  padding-bottom: 50px;
-}
-
-.contenedorForm {
-  margin: 0;
-}
-
-.botonMp {
-  background-image: url(../assets/img/mercadopago.png);
-}
-
-.botonCafecito {
-  background-image: url(../assets/img/cafecito.png);
-}
-
 /*MEDIA QUERYS*/
-@media screen and (max-width: 884px) {
-  /*HEADER RESPONSIVE*/
-  .contenedorNav {
-    width: 100%;
-    display: inline-block;
-  }
-  .navbar-brand {
-    margin: 0;
-  }
-  .contenedorLogo {
-    margin-left: 10px;
-  }
-  .logoCuartel {
-    width: 40px;
-  }
-  .contenedorListaItems {
-    padding-top: 20px;
-  }
-  .tipografiaAnclas {
-    text-align: right;
-  }
-  /*INDEX*/
-  .backgroundMain .tituloMain {
-    font-size: 2.5rem;
-    padding-top: 80px;
-  }
-  .backgroundMain .subtituloMain {
-    font-size: 1rem;
-  }
-  .posicionHeader {
-    position: relative;
-  }
-  .contenedorVideo .videoBomberos {
-    margin-bottom: 50px;
-    width: 70%;
-  }
-  /*TODOS LOS TITULOS DE LOS HTML*/
-  .titulo {
-    font-size: 2rem;
-  }
-  /*NOSOTROS RESPONSIVE*/
-  .cuartel {
-    display: flex;
-    justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 10px;
-  }
-  .contenedorParrafo {
-    padding: 0;
-  }
-  .contenedorMain {
-    margin: 0;
-  }
-  .cuartel {
-    margin: 0;
-    margin-left: 20px;
-  }
-  .cuartel img {
-    width: 350px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-    margin: 0;
-  }
-  .parrafosNosotros {
-    padding-left: 20px;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .parrafo {
-    padding-right: 0;
-    margin: 0;
-  }
-  /*FOOTER RESPOMSIVE*/
-  .backgroundFooter {
-    height: 50vh;
-  }
-  .footerLeftInfo {
-    justify-content: center;
-    line-height: 20px;
-  }
-  .tamanioIcon {
-    width: 70px;
-  }
-  .redes {
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-  }
-  .contenedorFooterLogo {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    margin-left: 0;
-    width: 100%;
-  }
-  .logoCuartelFooter {
-    width: 50px;
-    align-items: center;
-  }
-  .botonCafecito {
-    padding-bottom: 30px;
-  }
+@media screen and (min-width: 250px) and (max-width: 884px) {
   /*UNITE FORMULARIO RESPONSIVE*/
   .textarea {
     width: 100%;
@@ -430,26 +378,6 @@ span {
   .tamanioCarrusel {
     width: 100%;
     padding-top: 30px;
-  }
-  /*COLABORA RESPONSIVE*/
-  .DosBotones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .anclaBotonMp {
-    padding: 0;
-    padding-bottom: 20px;
-  }
-  .botonCafecito {
-    padding-bottom: 50px;
-  }
-  .backgroundMain {
-    margin: 0;
-  }
-  .botonUno {
-    padding-right: 0;
   }
 }
 

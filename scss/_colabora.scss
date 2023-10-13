@@ -1,0 +1,67 @@
+/*COLABORA*/
+
+
+
+.contenedorTextoUnite{
+    padding-bottom: 40px;
+    .textoUnite{
+        text-align: center;
+        font-family: $fuente-principal;
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: map-get($mapa-colores, color-white);
+            .h4{
+                padding-bottom: 60px;
+            }    
+    
+    }
+}
+
+.botones{
+    height: 400px;
+    width: 400px;
+    border-radius: 40px;
+}
+
+.anclaBotonMp{
+    padding-right: 80px;
+    padding-bottom: 50px;
+    .botonMp{
+        background-image: url(../assets/img/mercadopago.png);
+    }
+}
+
+
+
+
+
+.botonCafecito{
+    background-image: url(../assets/img/cafecito.png);
+}
+
+
+/*responsive*/
+
+
+/*COLABORA RESPONSIVE*/
+
+.DosBotones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.anclaBotonMp{
+    padding: 0;
+    padding-bottom: 20px
+}
+
+.botonCafecito{
+    padding-bottom: 50px;
+}
+.backgroundMain{
+    margin: 0;
+}
+.botonUno{
+    padding-right: 0;
+}

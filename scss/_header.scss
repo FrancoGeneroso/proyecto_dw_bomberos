@@ -1,0 +1,63 @@
+/*NAV*/
+
+
+.posicionHeader{
+    position: fixed;
+    width: 100%;
+}
+.logoCuartel{
+    width: 9%;  
+
+    }
+
+
+.backNav{    
+    width: 100%;
+    .listaItems{
+        
+        .tipografiaAnclas{
+            color:  white!important;
+            font-family: $fuente-principal;
+            font-size: 1.2rem;
+            font-weight: 400;
+            &:hover{
+                color: orange!important;
+            }    
+            
+        }
+        .inicio { color: orange !important; }
+        .nosotros{color: orange!important}
+        .unite{color: orange!important}
+        .galeria{color: orange!important}
+        .colabora{color: orange!important} 
+    }
+    
+    
+}
+
+@media screen and (min-width: 250px) and (max-width: 884px){
+
+/**HEADER RESPONSIVE*/
+
+.contenedorNav{
+    width: 100%;
+    display: inline-block;
+
+}
+.navbar-brand{
+    margin: 0;
+}
+.contenedorLogo{
+    margin-left: 10px;
+    
+}
+.logoCuartel{
+    width: 40px
+}
+.contenedorListaItems{
+    padding-top: 20px;
+}
+ .tipografiaAnclas{
+    text-align: right;
+ }
+}

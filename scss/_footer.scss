@@ -1,0 +1,88 @@
+
+/*FOOTER*/
+
+.backgroundFooter{ 
+   
+    background-image: url(../assets/img/ola.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-color: rgb(105, 0, 0);
+    position: relative;
+    height: 20vh;
+    .footerLeftInfo {   
+        
+        color: rgb(250, 249, 249);
+        font-family: 'Biryani', sans-serif;  
+        font-style: normal;
+        font-weight: 200;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        width: 100%;
+        line-height: 5px;}
+    .redes{
+        justify-content: space-evenly;
+        padding-left: 50px;
+        padding-right: 50px;
+        .tamanioIcon{
+            width: 90px;
+        }
+    }
+    
+    .contenedorFooterLogo {
+        width: 10%;
+        margin-left:20%; 
+        .logoCuartelFooter{
+            width: 70px;
+            
+        }
+    }
+    }
+
+
+
+@media screen and (min-width: 250px) and (max-width: 884px)  {  
+
+/*FOOTER RESPOMSIVE*/
+
+.backgroundFooter{
+    height: 50vh;
+    .footerLeftInfo{
+        justify-content: center;
+        line-height: 20px;
+    }
+    .redes{
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        .tamanioIcon{
+            width: 55px;
+            
+        }
+    }
+    .contenedorFooterLogo{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        margin-left: 0;
+        width: 100%;
+        .logoCuartelFooter{
+            width: 50px;
+            align-items: center;
+        
+        }
+    }
+}
+
+
+
+
+
+
+
+}
