@@ -1,3 +1,6 @@
+
+/*MIXIN*/
+
 @mixin contenedorFlexible($evenly, $left, $right, $top){
     display: flex;
     justify-content: $evenly;

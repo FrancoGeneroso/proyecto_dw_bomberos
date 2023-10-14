@@ -23,11 +23,37 @@
         width: 100%;
         line-height: 5px;}
     .redes{
-        @include contenedorFlexible( space-evenly , 50px, 50px, 0);
+        @include contenedorFlexible( space-evenly , 50px, 50px, 0);  /*UTILICE MIXIN EN REDES*/
+            
+        /*animacion footer*/
+        
+            .iconos{
+            animation-name: flotar;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+
+            }
+            
+            
+            .facebook{
+                animation-delay: 0;
+            }
+            .instagram{
+                animation-delay: 0.5s;
+            }
+            .tiktok{
+                animation-delay: 1s;
+            }
+        
         .tamanioIcon{
             width: 90px;
         }
+
+        
+        
     }
+    
     
     .contenedorFooterLogo {
         width: 10%;
@@ -37,6 +63,18 @@
             
         }
     }
+    }
+
+    @keyframes flotar {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-10px);
+        }
+        100%{
+            transform: translateY(0);
+        }
     }
 
 
@@ -52,7 +90,7 @@
         line-height: 20px;
     }
     .redes{
-        @include contenedorFlexible(space-between, 30px, 30px, 20px);
+        @include contenedorFlexible(space-between, 30px, 30px, 20px); /*UTILICE MIXIN EN REDES RESPONSIVE*/
         .tamanioIcon{
             width: 55px;
             

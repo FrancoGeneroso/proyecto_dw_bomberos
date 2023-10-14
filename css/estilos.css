@@ -1,4 +1,6 @@
+/*FUENTES*/
 @import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400&family=Hind:wght@400;700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap");
+/*MIXIN*/
 /* TITULOS DE TODOS LOS HTML*/
 .titulo {
   text-align: center;
@@ -79,6 +81,7 @@
     text-align: right;
   }
 }
+/*INDEX*/
 .backgroundMain {
   background-image: url(../assets/img/fondoBombero.jpg);
   background-size: cover;
@@ -114,6 +117,11 @@
   box-shadow: -1px 2px 30px 11px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 2px 30px 11px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 2px 30px 11px rgba(0, 0, 0, 0.75);
+  /*usando transiciones en el index*/
+  transition: transform 0.5s ease-in;
+}
+.contenedorVideo .videoBomberos:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 250px) and (max-width: 884px) {
@@ -143,6 +151,12 @@
   padding-bottom: 50px;
   padding-left: 50px;
 }
+.contenedorParrafo .cuartel .imagenCuartel {
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0.8;
+  animation-iteration-count: initial;
+}
 .contenedorParrafo .parrafosNosotros {
   margin: 0;
 }
@@ -163,8 +177,23 @@
   font-weight: 700;
 }
 
+@keyframes aparecer {
+  0% {
+    transform: translateX(-90px);
+    opacity: 0;
+    filter: blur(80%);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0%);
+  }
+}
 /*NOSOTROS RESPONSIVE*/
 @media screen and (min-width: 250px) and (max-width: 884px) {
+  .backgroundMain {
+    margin: 0;
+  }
   .contenedorParrafo {
     padding: 0;
   }
@@ -174,12 +203,14 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 10px;
+    margin: 0;
   }
   .contenedorParrafo .cuartel img {
     width: 350px;
     justify-content: center;
     align-items: center;
     margin-left: 0px;
+    padding-left: 20px;
     margin: 0;
   }
   .contenedorParrafo .parrafosNosotros {
@@ -309,6 +340,7 @@
   text-transform: uppercase;
 }
 .resetSend .enviar {
+  /*USE EXTEND EN UNITE PARA UNO DE LOS BOTONES*/
   background-color: rgb(3, 204, 20);
 }
 
@@ -395,6 +427,23 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 0;
+  /*UTILICE MIXIN EN REDES*/
+  /*animacion footer*/
+}
+.backgroundFooter .redes .iconos {
+  animation-name: flotar;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.backgroundFooter .redes .facebook {
+  animation-delay: 0;
+}
+.backgroundFooter .redes .instagram {
+  animation-delay: 0.5s;
+}
+.backgroundFooter .redes .tiktok {
+  animation-delay: 1s;
 }
 .backgroundFooter .redes .tamanioIcon {
   width: 90px;
@@ -407,6 +456,17 @@
   width: 70px;
 }
 
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media screen and (min-width: 250px) and (max-width: 884px) {
   /*FOOTER RESPOMSIVE*/
   .backgroundFooter {
@@ -422,6 +482,7 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
+    /*UTILICE MIXIN EN REDES RESPONSIVE*/
   }
   .backgroundFooter .redes .tamanioIcon {
     width: 55px;

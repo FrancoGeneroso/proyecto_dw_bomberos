@@ -48,7 +48,7 @@
         
     }
     .enviar{
-        @extend .limpiar;
+        @extend .limpiar;    /*USE EXTEND EN UNITE PARA UNO DE LOS BOTONES*/
         background-color: map-get($mapa-colores, color-green );
         
     }

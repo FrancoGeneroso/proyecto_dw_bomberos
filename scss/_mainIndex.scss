@@ -1,3 +1,5 @@
+/*INDEX*/
+
 .backgroundMain{
     background-image:url(../assets/img/fondoBombero.jpg); 
     background-size: cover;
@@ -37,7 +39,14 @@
         box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
         -webkit-box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
         -moz-box-shadow: -1px 2px 30px 11px rgba(0,0,0,0.75);
-        } }
+        /*usando transiciones en el index*/
+        transition: transform 0.5s ease-in ;
+        &:hover{  
+            transform: scale(1.1);
+        } 
+    
+    }
+    }
 
 
 @media screen and (min-width: 250px) and (max-width: 884px){
