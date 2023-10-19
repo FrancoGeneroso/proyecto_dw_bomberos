@@ -1,5 +1,5 @@
 /*FUENTES*/
-@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400&family=Hind:wght@400;700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400&family=Hind:wght@400;700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=Roboto:wght@400;500&display=swap");
 /*MIXIN*/
 /* TITULOS DE TODOS LOS HTML*/
 .titulo {
@@ -159,10 +159,11 @@
 }
 .contenedorParrafo .parrafosNosotros {
   margin: 0;
+  padding-top: 50px;
 }
 .contenedorParrafo .parrafosNosotros .parrafo {
   color: white;
-  font-family: "Prompt", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   padding-left: 0px;
@@ -174,7 +175,7 @@
 }
 .contenedorParrafo .parrafosNosotros .parrafo span {
   color: rgb(233, 74, 0);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @keyframes aparecer {
@@ -223,7 +224,8 @@
     text-align: center;
   }
   .contenedorParrafo .parrafosNosotros .parrafo {
-    padding-right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
     margin: 0;
   }
 }
@@ -254,6 +256,20 @@
 }
 .anclaBotonMp .botonMp {
   background-image: url(../assets/img/mercadopago.png);
+  animation-name: aparecerMp;
+  animation-duration: 2s;
+  animation-delay: 0.8;
+  animation-iteration-count: initial;
+}
+.anclaBotonMp .botonMp:hover {
+  box-shadow: -2px 1px 21px 12px rgba(242, 238, 238, 0.75);
+  -webkit-box-shadow: -2px 1px 21px 12px rgba(242, 238, 238, 0.75);
+  -moz-box-shadow: -2px 1px 21px 12px rgba(242, 238, 238, 0.75);
+}
+.anclaBotonMp .botonMp:active {
+  box-shadow: -15px -1px 125px 30px rgba(117, 43, 43, 0);
+  -webkit-box-shadow: -15px -1px 125px 30px rgba(117, 43, 43, 0);
+  -moz-box-shadow: -15px -1px 125px 30px rgba(117, 43, 43, 0);
 }
 
 .cafecito {
@@ -261,8 +277,46 @@
 }
 .cafecito .botonCafecito {
   background-image: url(../assets/img/cafecito.png);
+  animation-name: aparecerCa;
+  animation-duration: 2s;
+  animation-delay: 0.8;
+  animation-iteration-count: initial;
+}
+.cafecito .botonCafecito:hover {
+  box-shadow: -2px 1px 21px 12px rgba(242, 238, 238, 0.75);
+  -webkit-box-shadow: -2px 1px 21px 12px rgba(242, 238, 238, 0.75);
+  -moz-box-shadow: -2px 1px 21px 12px rgba(242, 238, 238, 0.75);
+}
+.cafecito .botonCafecito:active {
+  box-shadow: -15px -1px 125px 30px rgba(117, 43, 43, 0);
+  -webkit-box-shadow: -15px -1px 125px 30px rgba(117, 43, 43, 0);
+  -moz-box-shadow: -15px -1px 125px 30px rgba(117, 43, 43, 0);
 }
 
+@keyframes aparecerMp {
+  0% {
+    transform: translateX(-90px);
+    opacity: 0;
+    filter: blur(80%);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0%);
+  }
+}
+@keyframes aparecerCa {
+  0% {
+    transform: translateX(90px);
+    opacity: 0;
+    filter: blur(80%);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: blur(0%);
+  }
+}
 @media screen and (min-width: 250px) and (max-width: 884px) {
   /*COLABORA RESPONSIVE*/
   .botones {
@@ -299,6 +353,24 @@
 }
 .contenedorForm {
   margin: 0;
+}
+
+.porqueUnirse {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  text-align: justify;
+  margin: 0;
+  width: 100%;
+}
+.porqueUnirse span {
+  color: rgb(233, 74, 0);
+  font-weight: 500;
 }
 
 .formularioCompleto {
@@ -339,9 +411,27 @@
   padding: 20px;
   text-transform: uppercase;
 }
+.resetSend .limpiar:active, .resetSend .enviar:active {
+  color: #d30000;
+  background-color: white;
+}
+.resetSend .limpiar:hover, .resetSend .enviar:hover {
+  box-shadow: 0px 2px 26px 3px rgba(237, 13, 13, 0.75);
+  -webkit-box-shadow: 0px 2px 26px 3px rgba(237, 13, 13, 0.75);
+  -moz-box-shadow: 0px 2px 26px 3px rgba(237, 13, 13, 0.75);
+}
 .resetSend .enviar {
   /*USE EXTEND EN UNITE PARA UNO DE LOS BOTONES*/
   background-color: rgb(3, 204, 20);
+}
+.resetSend .enviar:active {
+  color: rgb(3, 204, 20);
+  background-color: white;
+}
+.resetSend .enviar:hover {
+  box-shadow: 0px 2px 26px 3px rgba(36, 252, 55, 0.75);
+  -webkit-box-shadow: 0px 2px 26px 3px rgba(36, 252, 55, 0.75);
+  -moz-box-shadow: 0px 2px 26px 3px rgba(36, 252, 55, 0.75);
 }
 
 .divMaps {
@@ -356,6 +446,10 @@
 
 /*UNITE FORMULARIO RESPONSIVE*/
 @media screen and (min-width: 250px) and (max-width: 884px) {
+  .porqueUnirse {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .formularioCompleto {
     background-color: transparent;
   }
@@ -386,10 +480,31 @@
   }
 }
 /*GALERIA*/
+.zindex {
+  z-index: 10;
+}
+
 .tamanioCarrusel {
   width: 60%;
   padding-bottom: 50px;
   margin: 0 auto;
+}
+
+.textoGaleria {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding-left: 0px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  text-align: justify;
+  margin: 0;
+}
+.textoGaleria span {
+  color: rgb(233, 74, 0);
+  font-weight: 500;
 }
 
 @media screen and (min-width: 250px) and (max-width: 884px) {

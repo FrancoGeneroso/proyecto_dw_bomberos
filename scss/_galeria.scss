@@ -1,11 +1,31 @@
 
 /*GALERIA*/
 
+.zindex{
+    z-index: 10;
+}
+
 .tamanioCarrusel{
     width: 60%;
     padding-bottom: 50px;
     margin: 0 auto;
     
+}
+.textoGaleria{
+    color: map-get($mapa-colores, color-white );
+        font-family: $fuente-roboto;
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding-left: 0px;
+        padding-right: 10px;
+        padding-bottom: 40px;   
+        padding-top: 20px;
+        text-align: justify;
+        margin: 0;
+        span{
+            color: map-get($mapa-colores, color-naranjaClaro );
+            font-weight: 500;
+}
 }
 
 
@@ -13,14 +33,18 @@
 
 @media screen and (min-width: 250px) and (max-width: 884px){
 
-
-/*GALERIA RESPONSIVE*/
+    /*GALERIA RESPONSIVE*/
 
 .tamanioCarrusel{
     width: 100%;
-    padding-top: 30px;
+    padding-top: 30px}
     
+
 }
 
 
-}
+
+
+
+
+

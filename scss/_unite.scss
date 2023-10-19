@@ -2,6 +2,24 @@
     margin: 0;
 }
 
+.porqueUnirse{
+    color: map-get($mapa-colores, color-white );
+        font-family: $fuente-roboto;
+        font-size: 1.1rem;
+        font-weight: 400;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 40px;   
+        padding-top: 20px;
+        text-align: justify;
+        margin: 0;
+        width: 100%;
+        span{
+            color: map-get($mapa-colores, color-naranjaClaro );
+            font-weight: 500;
+}
+}
+
   
 .formularioCompleto{
     
@@ -43,13 +61,32 @@
         color: map-get($mapa-colores, color-white );
         border-radius: 10px ;
         padding: 20px;
-        text-transform: uppercase;
+        text-transform: uppercase;      
+        &:active{ 
+            color: map-get($mapa-colores, color-red);
+            background-color: map-get($mapa-colores, color-white);
+        }
+        &:hover{
+            box-shadow: 0px 2px 26px 3px rgba(237,13,13,0.75);
+            -webkit-box-shadow: 0px 2px 26px 3px rgba(237,13,13,0.75);
+            -moz-box-shadow: 0px 2px 26px 3px rgba(237,13,13,0.75);
+        }
     
         
     }
     .enviar{
         @extend .limpiar;    /*USE EXTEND EN UNITE PARA UNO DE LOS BOTONES*/
         background-color: map-get($mapa-colores, color-green );
+        &:active{
+            color: map-get($mapa-colores, color-green);
+            background-color: map-get($mapa-colores, color-white );
+        }
+        &:hover{
+            box-shadow: 0px 2px 26px 3px rgba(36,252,55,0.75);
+            -webkit-box-shadow: 0px 2px 26px 3px rgba(36,252,55,0.75);
+            -moz-box-shadow: 0px 2px 26px 3px rgba(36,252,55,0.75);
+
+        }
         
     }
      
@@ -75,7 +112,11 @@
 
 @media screen and (min-width: 250px) and (max-width: 884px){
 
-
+.porqueUnirse
+     {
+        padding-left: 20px;
+        padding-right: 20px;
+        }
 
 
 
