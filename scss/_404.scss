@@ -1,0 +1,83 @@
+
+
+
+.contenedorError{
+    justify-content: center;
+    padding-left: 200px;
+    .cuatro{
+        height: 100vh;
+    }
+    .imagenError{
+        width: 800px;
+        justify-content: center;
+        padding-top: 30%;
+        
+    }
+    
+        }
+.oops{
+    font-family: $fuente-principal;
+    font-size: 10rem;
+    font-weight: 700;
+    color:map-get($mapa-colores, color-white);
+    margin-bottom: 0px;
+    text-align: left;
+    padding-top: 300px;
+    
+    }    
+
+.bomberosTrabajando{
+    @extend .oops;
+    font-size: 7rem;
+    padding-top: 10px;
+    text-align: left;
+}    
+
+
+
+.contenedorAncla{
+    padding-bottom: 60px;
+    .botonError{
+        width: 500px;
+        height: 80px;
+        border-radius: 20px;
+        
+        background-color: map-get($mapa-colores, color-orange );
+        color: map-get($mapa-colores, color-white );
+        font-family: $fuente-principal;
+        font-weight: 700;
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 250px) and (max-width: 884px){
+.contenedorError{
+    padding-left: 40px;
+    .cuatro{
+        height: auto;
+    }
+    .imagenError{
+        width: 300px;
+        width: 100%;
+    }
+}
+
+.contenedorOops{
+    padding-bottom: 80px;
+}
+    .oops{
+    font-size: 5rem;
+    padding-top: 50px;
+    text-align: center;
+}
+.bomberosTrabajando{
+ font-size: 3rem;
+ padding-top: 20px;   
+}
+
+.contenedorAncla{
+    .botonError{
+        width: 280px;
+    }
+}
+
+}
