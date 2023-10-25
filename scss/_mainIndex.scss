@@ -27,7 +27,20 @@
         padding-top: 20px;
             
         }
-        
+    .bienvenidos{
+        @extend .tituloMain;
+        font-size: 2rem;
+        text-align: left;
+        margin-top: 0;
+        padding-top: 20px;
+        text-align: justify;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-weight: 400;
+        .bienvenidosSpan{
+            color: map-get($mapa-colores, color-orange );
+        }
+    }  
     }    
     
 .contenedorVideo {
@@ -61,8 +74,12 @@
     
      }
     
-     .subtituloMain{ font-size: 1rem;
+     .subtituloMain{ font-size: 1.3rem;
         padding-top: 20px;
+    }
+    .bienvenidos{
+        font-size: 1.5rem;
+        padding-top: 50px;
     }
 }
 .posicionHeader{position: relative;}
@@ -72,3 +89,4 @@
         margin-bottom: 50px;
         width: 70%;}     }
     }
+
